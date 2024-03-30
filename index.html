@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Recipe Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html"><img src="Recipe_logo.jpeg" alt="Home"></a>
+        </div>
+        <div class="header-center">
+            <h1>Friendliest Recipe Site</h1>
+        </div>
+        <div class="header-right">
+            <button class="btn-register">Register</button>
+            <button class="btn-login">Login</button>
+        </div>
+    </header>
+
+    <div class="content">
+        <h2>All Recipes</h2>
+
+        <div class="recipe-options">
+            <div class="add-recipe">
+                <a href="addRecipe.html" class="add-recipe-btn">Add Recipe</a>
+            </div>
+            <div class="order-by">
+                <button class="order-by-btn">Order by</button>
+                <div class="dropdown-content">
+                    <a href="#">Asc by Stars</a>
+                    <a href="#">Desc by Stars</a>
+                    <a href="#">Asc by Difficulty</a>
+                    <a href="#">Desc by Difficulty</a>
+                    <a href="#">Date Added</a>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        
+        <!-- Display list of recipes -->
+        <div class="recipe-container"></div> 
+    </div>
+
+    <div class="sidebar">
+        <!-- Promotions, links, etc. -->
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
